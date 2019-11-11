@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercises", "UnitTestSectio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapYearCalculation", "LeapYearCalculation\LeapYearCalculation.csproj", "{65071EF0-72A6-414C-A024-BCC263B8CA70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employee", "Employee\Employee.csproj", "{82E61431-3C7F-4CBF-A03D-4722195E74E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Car", "Car\Car.csproj", "{0F4F6746-203A-414D-81E6-5D9CA9ED6562}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{65071EF0-72A6-414C-A024-BCC263B8CA70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65071EF0-72A6-414C-A024-BCC263B8CA70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65071EF0-72A6-414C-A024-BCC263B8CA70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82E61431-3C7F-4CBF-A03D-4722195E74E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82E61431-3C7F-4CBF-A03D-4722195E74E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82E61431-3C7F-4CBF-A03D-4722195E74E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82E61431-3C7F-4CBF-A03D-4722195E74E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F4F6746-203A-414D-81E6-5D9CA9ED6562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F4F6746-203A-414D-81E6-5D9CA9ED6562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F4F6746-203A-414D-81E6-5D9CA9ED6562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F4F6746-203A-414D-81E6-5D9CA9ED6562}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
