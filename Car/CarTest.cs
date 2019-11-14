@@ -18,6 +18,31 @@ namespace Car
             StringAssert.Equals(myCar.Color, "red");
 
         }
+        [TestMethod]
+        public void CallMainAccelarationMethod()
+            {
+        //arange(initiating an object)
+        Car myCar = new Car("red", 3, true);
+
+        //act(call methods if needed)
+        myCar.Accelarate();
+            }
+
+        [TestMethod]
+        public void CallFamilyCarMethod()
+        {
+            Car myCar = new Car("red", 4, true);
+            bool carType=myCar.FamilyCar();
+            if(carType==true)
+            {
+                Assert.IsTrue(carType == true);
+            }
+            else
+            {
+                Assert.Fail();
+            }
+        }
+
     }
 }
 

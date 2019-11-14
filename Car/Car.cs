@@ -44,7 +44,7 @@ namespace Car
         get { return numOfDoors; }
         set
         {
-            if (value < 4)
+            if (value <= 4)
             {
                 numOfDoors = value;
             }
@@ -62,7 +62,7 @@ namespace Car
 
     public bool FamilyCar()
     {
-        if (NumOfDoors > 4)
+        if ((NumOfDoors > 2)&&(NumOfDoors<=4))
         {
             return true;
         }

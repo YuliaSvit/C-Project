@@ -34,6 +34,20 @@ namespace Employee
             Department = departmentC;
             MonthlySalary = monthlySalaryC;
         }
+
+        //Empty Constructor
+        public EmployeeClass(int employeeNumberC)
+        {
+            EmployeeNumber = employeeNumberC;
+        }
+
+        //Constructor with name , id and title
+        public EmployeeClass(int employeeNumberC, string nameC, string jobTitleC) 
+        {
+            EmployeeNumber = employeeNumberC;
+            Name = nameC;
+            JobTitle = jobTitleC;
+        }
         ////////////Properties: get set acessors////////////
         public int EmployeeNumber { get; set; }
         public string FirstName { get; set; }
@@ -42,17 +56,45 @@ namespace Employee
         public string JobDescription { get; set; }
         public string Department { get; set; }
         public decimal MonthlySalary { get; set; }
+        public string Name { get; set; }
+        public string JobTitle { get; set; }
 
 
         //////////methods///////////
+        //Method that returns employee in a format of FN LN
         public string ReturnEmployee()
         {
             return $"{ FirstName} { LastName}";
         }
+        
+        //Method that returns employee in a format of LN, FN (for sorting in the future)
         public string ReturnEmployeeSorted()
         {
             return $"{ LastName}, {FirstName}";
         }
         
+        //Method that identifies locarion based on the job titele
+        public string JobLocation()
+        {
+            if (JobTitle=="Manager")
+            {
+                return "Boston";
+            }
+            else if (JobTitle=="Staff")
+            {
+                return "Chicago";
+            }
+            else
+            {
+                return "New York";
+            }
+        }
+
+        //This method automatically will be called, and this string will be returned.
+        public override string ToString()
+        {
+            return EmployeeNumber + " "+ Name + ", Job Title:" + JobTitle;
+        }
+
     }
 }

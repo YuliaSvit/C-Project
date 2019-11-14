@@ -14,7 +14,7 @@ namespace Exercises
         [DataTestMethod]
         [DataRow(2000, "Yes")]
         [DataRow(1999,  "No")]
-        [DataRow(2004,  "No")]
+        [DataRow(2004,  "Yes")]
         
         public void EnterYear_Unit(int enteredYear, string isLeapYear)
         {
