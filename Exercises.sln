@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employee", "Employee\Employ
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Car", "Car\Car.csproj", "{0F4F6746-203A-414D-81E6-5D9CA9ED6562}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trip", "Trip\Trip.csproj", "{352B5A36-2643-491E-8829-6C18672ADFD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trip", "Trip\Trip.csproj", "{352B5A36-2643-491E-8829-6C18672ADFD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Receipt", "Receipt\Receipt.csproj", "{7BE5F40A-0807-47DD-858D-D453C8C69CE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{352B5A36-2643-491E-8829-6C18672ADFD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{352B5A36-2643-491E-8829-6C18672ADFD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{352B5A36-2643-491E-8829-6C18672ADFD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BE5F40A-0807-47DD-858D-D453C8C69CE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BE5F40A-0807-47DD-858D-D453C8C69CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BE5F40A-0807-47DD-858D-D453C8C69CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BE5F40A-0807-47DD-858D-D453C8C69CE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

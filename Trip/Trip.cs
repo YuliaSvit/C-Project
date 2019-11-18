@@ -7,13 +7,13 @@ namespace Trip
     class Trip
     {
         // variables
-        private string destination;
+        /*private string destination;
         private double distanceTraveled;
         private double totalCostOfGas;
-        private double numberOfGallonsConsumed;
+        private double numberOfGallonsConsumed;*/
 
         //Constructors
-        public Trip (string destinationC, double distanceTraveledC,double totalCostOfGasC,double numberOfGallonsConsumedC)
+        public Trip (string destinationC, double distanceTraveledC,decimal totalCostOfGasC,double numberOfGallonsConsumedC)
         {
             Destiantion=destinationC ;
             DistanceTraveled = distanceTraveledC; ;
@@ -24,7 +24,7 @@ namespace Trip
         //Properties
        public string Destiantion { get; set; }
        public double DistanceTraveled { get; set; }
-       public double TotalCostOfGas { get; set; }
+       public decimal TotalCostOfGas { get; set; }
        public double NumberOfGallonsConsumed { get; set; }
 
         //Methods
@@ -32,20 +32,23 @@ namespace Trip
         //Miles per Gallon
         public double CalculateMilesPerGallon()
         {
-            double mPG = DistanceTraveled / NumberOfGallonsConsumed;
-            return mPG;
+            return DistanceTraveled / NumberOfGallonsConsumed;
         }
         //Cost per Mile
-        public double CalculateCostPerMile()
+        public decimal CalculateCostPerMile()
         {
-            double cPM = TotalCostOfGas / DistanceTraveled;
-            return cPM;
+            return TotalCostOfGas / Convert.ToDecimal(DistanceTraveled);
         }
 
         //String Method
         public override string ToString()
         {
-           return  "Be ready for your next epic trip. If you want to go to " + Destiantion + " you have to  drive " + DistanceTraveled + " miles. And it will cost you " + TotalCostOfGas + "$";
+            return "Destination: " + Destiantion +
+                  "\nTotal Miles: " + DistanceTraveled +
+                  "\nFuel Consumed: " + NumberOfGallonsConsumed.ToString("f1") + " gallons" +
+                  "\nCost: " + TotalCostOfGas.ToString("c") +
+                  "\nMiles Per Gallon: " + CalculateMilesPerGallon().ToString("f0") +
+                  "\nCost Per Mile: " + CalculateCostPerMile().ToString("c");
         }
     }
 }
