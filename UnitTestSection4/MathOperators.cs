@@ -8,7 +8,77 @@ namespace Exercises
     [TestClass]
     [TestCategory("Quiz")]
     public class MathOperators
-    {      
+    {
+        [TestMethod]
+        public void  WhileLoopTest() {
+            int a = 0;
+            //int b = 10;
+            
+                while (a < 3)
+                {
+                int b = 10;
+                while(b>5)
+                {
+                    Console.WriteLine($"Outer:{a}\tInner:{b}");
+                    b--;
+                }
+               
+                    //Console.WriteLine($"Outer:{a}");
+                    a++;
+                }}
+
+        [TestMethod]
+        //same loop as above could be written using for loop
+        public void ForLoopTest()
+        {
+            for(int a=0; a<3; a++)
+            {
+                for (int b=10;b>5;b--)
+                {
+                    Console.WriteLine($"Outer:{a}\tInner:{b}");
+                }
+            }
+        }
+        [TestMethod]
+        public void DoWhileTest()
+        {
+            int sum = 0;
+            int number = 1;
+            do
+            {
+                sum += number;
+                number++;
+            }
+            while (number <= 10);
+            Assert.AreEqual(55, sum);
+        }
+
+        [TestMethod]
+        public void SwitchTest()
+        {
+            int weekDay = 4;
+            string testDay = "";
+            switch(weekDay)
+            {
+            case 1:
+                testDay = "Monday";
+                break;
+            case 2:
+                testDay = "Tuesday";
+                break;
+            case 3:
+                testDay = "Wednesday";
+                break;
+            case 4:
+                testDay = "Thursday";
+                break;
+            default:
+                testDay = "Not Mon-Thurs";
+                break;
+            }
+            StringAssert.Equals(testDay, "Thursday");
+        }
+            
         [TestMethod]
         public void Convert_F_To_C()
         {
