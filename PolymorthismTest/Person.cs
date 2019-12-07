@@ -36,6 +36,11 @@ namespace PolymorthismTest
         {
             return "A person gets 8 hours of sleep";
         }
+        public override string ToString()
+        {
+            return "First Name: " + firstName + "\n" +
+                "Last Name: " + lastName;
+        }
 
     }
 }

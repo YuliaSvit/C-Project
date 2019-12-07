@@ -34,7 +34,7 @@ namespace Loan_Program
                 "\n\tLoan Number: " + LoanNumber +
                 "\n\tCustomer First Name: " + CustomerFirstName +
                 "\n\tCustomer Last Name: " + CustomerLastName +
-                "\n\tInterest Rate: " + InterestRate.ToString() +
+                "\n\tInterest Rate: " + InterestRate.ToString("p2") +
                 "\n\tLoan Amount: " + LoanAmount.ToString("C") +
                 "\n\tNumber of Years in the loan's term: " + NumOfYearsLoanTerm+
                 "\n\tInterest: "+CalculateInterest().ToString("C");

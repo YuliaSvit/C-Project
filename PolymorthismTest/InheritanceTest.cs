@@ -46,6 +46,29 @@ namespace PolymorthismTest
                 Console.WriteLine(item.HoursOfSleep());
             }
         }
+        [TestMethod]
+        public void Test_Traveler()
+        {
+            DateTime dob = new DateTime(1980, 5, 20);
+            Student myStudent1 = new Student("1", "Svit", "Yulia", 32, dob, "Computer Science", "7");
+            Student myStudent2 = new Student("2", "Anna", "Smith", 34, dob, "Computer Science", "8");
+            Professor prof1 = new Professor("11", "Amily", "Hess", 33, dob, "56", "Math");
+            Professor prof2 = new Professor("12", "John", "Lui", 65, dob, "57", "Science");
+
+            Person[] listOfPeople = new Person[4];
+            listOfPeople[0] = prof1;
+            listOfPeople[1] = prof2;
+            listOfPeople[2] = myStudent1;
+            listOfPeople[3] = myStudent2;
+
+            foreach(Person someone in listOfPeople)
+            {
+                Console.WriteLine(someone);
+            }
+
+
+
+        }
 
 
     }

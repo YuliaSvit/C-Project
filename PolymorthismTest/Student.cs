@@ -6,7 +6,7 @@ namespace PolymorthismTest
 {
     //Person is a base class, Student is a derived class. So student enherites all the properties from the 
     //..from the Person class, plus will have some additional specific properties
-    class Student:Person
+    class Student:Person,ITraveler
     {
         private string major;
         private string studentId;
@@ -33,6 +33,29 @@ namespace PolymorthismTest
         public override string HoursOfSleep()
         {
             return "A student gets 6 hours of sleep";
+        }
+
+        //methods to implement ITraveler interface
+        public string GetDestination()
+        {
+            return "Home";
+        }
+        public string GetStartLocation()
+        {
+            return "School";
+        }
+        public double DetermineMiles()
+        {
+            return 75.0;
+        }
+        //override ToString Method from the Base class
+        public override string ToString()
+        {
+            return base.ToString() +
+                "\n Destination: " + GetDestination() +
+                "\n Start Location: " + GetStartLocation() +
+                "\n Miles: " + DetermineMiles();
+
         }
 
     }
